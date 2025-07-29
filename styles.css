@@ -1,0 +1,616 @@
+/* Global Body Styles */
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.4705882353;
+    font-weight: 400;
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #fff;
+    color: #1d1d1f;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Remove underline from links and buttons */
+a, button {
+    text-decoration: none;
+}
+
+/* Header Placeholder */
+.header-placeholder {
+    height: 134px; /* Adjust based on actual header height */
+}
+
+/* Header Styling */
+#header {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: saturate(180%) blur(20px);
+    z-index: 9999;
+    display: block;
+    margin: 0;
+    width: 100%;
+    min-width: auto;
+    font-size: 17px;
+    position: fixed;
+    top: 0;
+    /* padding: 1rem;
+    display: flex; */
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo Styling */
+#logo {
+    padding-top: 15px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0px;
+    padding: 5px 0; /* Top/Bottom: 5px, Left/Right: 0 */
+
+    justify-content: center; /* Center links horizontally */
+    background: #0071e3; /* Blue nav background */
+}
+
+
+
+.nav-links a {
+    color: #fff; /* White text */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #FFA500; /* Orange on hover */
+}
+
+.nav-links a.active {
+    color: #0c4da2; /* Darker blue for active */
+    font-weight: bold;
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger-icon {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger-icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+}
+
+/* General Section Styling */
+.section {
+    padding: 4rem 2rem;
+}
+
+/* Intro Section */
+.intro {
+    background: linear-gradient(to top, #f8f8f8, #d8d8d8); /* Light gray gradient */
+    padding: 5px 2rem;
+    position: relative;
+    /* z-index: -2; */
+}
+
+@keyframes shine {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+.intro h1 {
+    font-size: 70px;
+    font-weight: 600;
+    margin: 20px ;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(to right, #0a56f7, #5851f9, #804bfa, #a041f9, #bd34f6, #db1fdf, #f005c9, #ff00b3, #ff008a, #ff0063, #ff0063, #ff008a, #ff00b3, #f005c9, #db1fdf, #bd34f6, #a041f9, #804bfa, #5851f9, #0a56f7);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 200% auto;
+    animation: shine 10s linear infinite;
+}
+
+.intro p {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+
+
+.video-container {
+    position: relative;
+    padding-bottom: 50%; /* 16:9 aspect ratio */
+    height: 0;
+
+    max-width: 90%;
+    margin: 10px auto;
+
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 30px;
+}
+
+.intro .cta-button {
+    padding: 10px 20px;
+    background: #0071e3; /* Blue */
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.intro .cta-button:hover {
+    background: #0c4da2; /* Darker blue on hover */
+}
+/* ############################################################################ */
+
+/* ############################################################## */
+
+/* Publications Section Background */
+#publications.section {
+    background-color: #000; /* Black background */
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+/* Section Heading */
+#publications h2 {
+
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(to right, #51e81a, #20e95c, #00e985, #00e8a6, #00e5bf, #0fe6bd, #19e7bb, #21e8b9, #4eec9b, #78ed78, #a1ec4f, #cbe817, #a1ec4f, #78ed78, #4eec9b, #21e8b9, #19e7bb, #0fe6bd, #00e5bf, #00e8a6, #00e985, #20e95c, #51e81a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: shine 5s linear infinite;
+}
+
+.press-tier h3 {
+    color: rgb(224, 26, 187); /* Make subheadings white */
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    margin-top: 4rem;
+}
+
+
+/* Gradient animation */
+@keyframes shine {
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: 200% center;
+    }
+}
+
+/* Publication List */
+.publication-list {
+    list-style: none;
+    padding: 0;
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #fff; /* White text */
+}
+
+/* Separator | after each item except last */
+.publication-list li::after {
+    content: " |";
+    margin-left: 6px;
+    color: #aaa;
+}
+
+.publication-list li:last-child::after {
+    content: "";
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background: #0071e3; /* Blue */
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.cta-button:hover {
+    background: #0c4da2; /* Darker blue on hover */
+}
+
+.cta-container {
+    margin-top: 2rem;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .publication-list li::after {
+        content: ""; /* Remove the "|" separator */
+        margin-left: 0;
+    }
+}
+
+
+/* ############################################################### */
+
+
+
+/* Testimonial Section */
+/* Section Heading */
+#testimonials h2 {
+
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(to right, #0a56f7, #5851f9, #804bfa, #a041f9, #bd34f6, #db1fdf, #f005c9, #ff00b3, #ff008a, #ff0063, #ff0063, #ff008a, #ff00b3, #f005c9, #db1fdf, #bd34f6, #a041f9, #804bfa, #5851f9, #0a56f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: shine 5s linear infinite;
+}
+
+
+@media (max-width: 768px) {
+    #testimonials h2 {
+        text-align: center;
+        font-size: 50px;
+    }
+}
+
+
+.testimonial-bg {
+    background: linear-gradient(to top, #f8f8f8, #d8d8d8); /* Light gray gradient */
+}
+
+.testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.testimonial {
+    max-width: 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 30px;
+}
+
+.testimonial iframe {
+    width: 100%;
+
+    display: block;
+    border: none; /* Remove default iframe border */
+    border-radius: 30px;
+}
+
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .testimonial iframe {
+        max-width: 90%; /* Reduce size to fit mobile screens */
+        height: 200px; /* Adjust height for smaller screens (maintains 16:9 ratio) */
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial iframe {
+        max-width: 100%; /* Full width for very small screens */
+        height: 180px; /* Further reduce height for tiny screens */
+    }
+}
+
+.testimonial h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    
+}
+
+
+/* Recent Work Section */
+.work-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 2rem; /* Maintain spacing between items */
+    align-items: center; /* Center items horizontally */
+    margin-top: 2rem;
+}
+
+
+
+.work-item h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 20px;
+    background-image: linear-gradient(to right, #51e81a, #20e95c, #00e985, #00e8a6, #00e5bf, #0fe6bd, #19e7bb, #21e8b9, #4eec9b, #78ed78, #a1ec4f, #cbe817, #a1ec4f, #78ed78, #4eec9b, #21e8b9, #19e7bb, #0fe6bd, #00e5bf, #00e8a6, #00e985, #20e95c, #51e81a);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 200% auto;
+    animation: shine 5s linear infinite;
+}
+
+.work-item p {
+    padding: 30px;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.work-item img {
+    width: 100%;
+    max-width: 1500px; /* Smaller max width for desktop */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image */
+    border-radius: 50px; /* Add curved corners */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .work-item {
+        padding: 0.5rem; /* Reduced padding for mobile to avoid overflow */
+    }
+
+    .work-item img {
+        max-width: 100%; /* Smaller size to prevent overflow on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .work-item img {
+        max-width: 100%; /* Slightly larger but still contained */
+    }
+}
+
+
+/* Press Release Section */
+.press-release-bg {
+
+    background: linear-gradient(to right, #f1c8f9, #f8f8f8, #f1c8f9); /* Pinkish gradient */
+    animation: gradientAnimation 10s infinite linear;
+    background-size: 200% auto;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+}
+
+.press-release-bg ul {
+    padding-left: 0px;
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.press-release-bg li {
+
+    margin: 0.5rem 0;
+}
+
+.press-release-bg .cta-button {
+    padding: 10px 20px;
+    background: #0071e3;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.press-release-bg .cta-button:hover {
+    background: #0c4da2;
+}
+
+
+
+
+/* Team Section */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* Style for PR Director image */
+.PR_Director {
+    text-align: center; /* Center the image */
+    max-width: 100%; /* Prevent overflow */
+}
+
+.PR_Director img {
+    width: 100%;
+    max-width: 300px; /* Smaller size for desktop */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image */
+    border-radius: 30px; /* Add curved corners */
+}
+
+.team-member {
+    max-width: 300px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.team-member h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.team-member p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+
+
+
+
+/* Contact Section */
+.contact-bg {
+    background: linear-gradient(to top, #f8f8f8, #d8d8d8); /* Light gray gradient */
+}
+
+/* form {
+    max-width: 500px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+} */
+
+input, textarea {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+textarea {
+    height: 150px;
+}
+
+.contact-bg .cta-button {
+    padding: 10px 20px;
+    background: #0071e3;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.contact-bg .cta-button:hover {
+    background: #0c4da2;
+}
+
+/* About Section */
+#about {
+    background: linear-gradient(to top, #f8f8f8, #d8d8d8); /* Light gray gradient */
+}
+
+#about p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background: #f8f8f8; /* Light gray */
+    color: #1d1d1f;
+    text-align: center;
+    padding: 2rem;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: #0071e3; /* Blue */
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #0c4da2; /* Darker blue */
+}
+
+footer p {
+    font-size: 14px;
+    color: #6e6e73; /* Gray for legal text */
+}
+
+/* Heading Styles */
+h2 {
+    font-size: 60px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+    color: #1d1d1f;
+}
+
+/* Underline Class */
+.underline {
+    color: #0071e3;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        background: linear-gradient(#333333 40%, #0071e3);
+        height: 600px;
+    }
+    .nav-links.show {
+        display: block;
+    }
+    .nav-links a {
+        display: block;
+        padding-top: 50px;
+        text-align: center;
+    }
+    .hamburger-icon {
+        display: block;
+    }
+    .header-placeholder {
+        height: 130px; /* Adjust for mobile */
+    }
+    .intro h1 {
+        font-size: 55px;
+        margin-top: 0;
+    }
+    .intro {
+        padding: 5px 10px 50px;
+    }
+    .publication-list, .work-container, .testimonial-container, .team-container {
+        flex-direction: column;
+        margin: 0;
+    }
+    .publication, .work-item, .testimonial, .team-member {
+        /* width: 100%; */
+        margin: 10px 0;
+    }
+}
